@@ -18,9 +18,9 @@ body {
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
-  background: url("../aforus_logo_v2.png");
+  height: 20vh;
+  width: 20vh;
+  background: url("../aforus_logo_v3.png");
   background-position: center;
   background-size: cover;
 }
