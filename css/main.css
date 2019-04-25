@@ -6,26 +6,40 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: #222;
+  background: #fff;
   display: grid;
-  place-items: center;
+  grid-template-rows: 1fr 3fr 10fr;
+  font-family: 'Poppins', sans-serif;
 }
 
-.logo-wrapper{
-  background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-  background-size: 500000% 500000%;
-  animation: Fade 10s alternate infinite;
+.list-wrapper ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: #212121;
+  font-size: 4rem;
+  background: #212121;
+}
+
+.list-wrapper ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-wrapper {
+    place-self: center;
 }
 
 .logo {
   height: 30vh;
   width: 30vh;
-  background: url("../aforus_logo.png");
+  background: url("../aforus_logo_dark.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@keyframes Fade {
-  0%{background-position:0%}
-  100%{background-position:100%}
+.twitch-wrapper{
+  place-self:start center;
+  display: flex;
+  justify-content: center;
 }

@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="ger" dir="ltr">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
   <head>
     <meta charset="utf-8">
     <title>Aforus</title>
   </head>
   <body>
+    <header>
+      <div class="list-wrapper">
+        <ul>
+          <li class="twitter"><a href="https://twitter.com/AFORUS1337">Twitter</a></li>
+          <li class="twitch"><a href="https://www.twitch.tv/aforus">Twitch</a></li>
+          <li class="discord"><a href="https://discordapp.com/invite/YkQ3Qqr">Discord</a></li>
+        </ul>
+      </div>
+    </header>
     <div class="logo-wrapper">
       <div class="logo"></div>
     </div>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div class="twitch-wrapper">
+      <div id="twitch-embed"></div>
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1000,
+        height: 480,
+        channel: "aforus"
+      });
+    </script>
   </body>
 </html>
