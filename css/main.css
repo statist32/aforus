@@ -28,7 +28,7 @@ body {
     color: #ff0088;
 }
 .background-wrapper {
-  background: url("../Neon BG.png") no-repeat fixed center;
+  background: url("../Neon_BG.png") no-repeat fixed center;
   background-position: center;
   background-size: cover;
   grid-row: 2/4;	
