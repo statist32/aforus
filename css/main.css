@@ -50,9 +50,8 @@ h2 {
 	color: #b1b1b1;
 }
 
-li:hover {
+li a:hover {
 	color: #ffffff;
-	transform: scale(1.2);
 	transform-origin: center;
 }
 
