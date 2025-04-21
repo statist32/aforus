@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import  PaintingPreview  from '@/components/PaintingPreview';
+import  PaintingThumbnail  from '@/components/PaintingThumbnail/PaintingThumbnail';
 import { useQuery } from '@tanstack/react-query';
 import { paintingsQueryOptions } from '@/requests/requests';
 
@@ -22,10 +22,9 @@ function App() {
   const { data, isLoading, isError, error } = useQuery(paintingsQueryOptions());
 
   return (
-    <div className="text-center bg-white text-[#1e1e1e]">
-      <div className="bg-white text-[#1e1e1e]">
+    <div className="">
       {
-        data?.map?.((painting: Painting) => <PaintingPreview 
+        data?.map?.((painting: Painting) => <PaintingThumbnail 
         title={painting.title}
         size={painting.size}
         thumbnailUrl={painting.thumbnailUrl}
@@ -33,10 +32,6 @@ function App() {
         description={painting.description}
         key={painting.title}       
       />)}
-      
-      </div>
-
-
     </div>
   )
 }
