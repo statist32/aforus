@@ -1,3 +1,6 @@
+import { paintingQueryOptions } from "@/requests/requests";
+import { useQuery } from "@tanstack/react-query";
+
 interface PaintingProps {
     title: string;
     size: string;
@@ -7,11 +10,13 @@ interface PaintingProps {
 }
 
 const PaintingPreview = ({ title, size, thumbnailUrl, paintingUrl, description }: PaintingProps) => {
-    console.log({thumbnailUrl})
-    
+   
+    const { data, isLoading, isError, error } = useQuery(paintingQueryOptions(thumbnailUrl));
+
+
     return (
         <div className="m-8">
-            <img src={thumbnailUrl+"?url"} alt={`${title} thumbnail`} />
+            <img src={data} alt={`${title} thumbnail`} />
             <p>{thumbnailUrl}</p>
         </div>
     );

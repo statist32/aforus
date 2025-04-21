@@ -2,63 +2,63 @@
   {
     "title": "Teneritas",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/thumbnail/076_-_teneritas.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/076_-_teneritas.jpg",
     "paintingUrl": "/paintings/full/076_-_teneritas.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Nidus",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/077_-_nidus.jpg",
-    "paintingUrl": "//paintings/full/077_-_nidus.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/077_-_nidus.jpg",
+    "paintingUrl": "/paintings/full/077_-_nidus.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Fulgor",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/078_-_fulgor.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/078_-_fulgor.jpg",
     "paintingUrl": "/paintings/full/078_-_fulgor.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Praevia",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/079_-_praevia.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/079_-_praevia.jpg",
     "paintingUrl": "/paintings/full/079_-_praevia.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Axioma",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/080_-_axioma.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/080_-_axioma.jpg",
     "paintingUrl": "/paintings/full/080_-_axioma.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Profectus",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/082_-_profectus.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/082_-_profectus.jpg",
     "paintingUrl": "/paintings/full/082_-_profectus.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Asper",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/083_-_asper.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/083_-_asper.jpg",
     "paintingUrl": "/paintings/full/083_-_asper.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Optio",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/084_-_optio.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/084_-_optio.jpg",
     "paintingUrl": "/paintings/full/084_-_optio.jpg",
     "description": "SOME Markdown formatted text"
   },
   {
     "title": "Tactus",
     "size": "200px * 300mm",
-    "thumbnailUrl": "/paintings/full/085_-_tactus.jpg",
+    "thumbnailUrl": "/paintings/thumbnails/085_-_tactus.jpg",
     "paintingUrl": "/paintings/full/085_-_tactus.jpg",
     "description": "SOME Markdown formatted text"
   }

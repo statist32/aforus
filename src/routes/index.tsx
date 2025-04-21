@@ -21,9 +21,7 @@ export interface Painting{
 
 function App() {
 
-  const { data, isLoading, isError, error } = useQuery(paintingsQueryOptions);
-
-
+  const { data, isLoading, isError, error } = useQuery(paintingsQueryOptions());
 
   return (
     <div className="text-center bg-white text-[#1e1e1e]">
