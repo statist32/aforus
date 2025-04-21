@@ -10,9 +10,7 @@ interface PaintingProps {
 }
 
 const PaintingPreview = ({ title, size, thumbnailUrl, paintingUrl, description }: PaintingProps) => {
-   
-    const { data, isLoading, isError, error } = useQuery(paintingQueryOptions(thumbnailUrl));
-
+       const { data, isLoading, isError, error } = useQuery(paintingQueryOptions(thumbnailUrl));
 
     return (
         <div className="m-8">
