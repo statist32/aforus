@@ -1,0 +1,85 @@
+:root {
+  --animation-duration: 1500ms;
+  --animation-delay: 100ms;
+}
+
+body,
+html {
+  background-color: black;
+  font-family: 'Barlow Semi Condensed';
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #b1b1b1;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: calc(2rem + 1vw);
+  margin-bottom: 1rem;
+}
+h2 {
+  text-align: center;
+  margin: 0 2rem 1rem 2rem;
+  font-size: calc(1.5rem + 1vw);
+}
+
+.links {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+}
+.links li {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateX(-40%);
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: calc(3rem + 1vw);
+  text-decoration: none;
+  color: #b1b1b1;
+}
+
+li a:hover {
+  color: #ffffff;
+  transform-origin: center;
+}
+
+.links li:nth-child(1) {
+  animation: ease-out flyIn forwards var(--animation-duration);
+  animation-delay: calc(var(--animation-delay) * 0);
+}
+
+.links li:nth-child(2) {
+  animation: ease-out flyIn forwards var(--animation-duration);
+  animation-delay: calc(var(--animation-delay) * 1);
+}
+.links li:nth-child(3) {
+  animation: ease-out flyIn forwards var(--animation-duration);
+  animation-delay: calc(var(--animation-delay) * 2);
+}
+.links li:nth-child(4) {
+  animation: ease-out flyIn forwards var(--animation-duration);
+  animation-delay: calc(var(--animation-delay) * 3);
+}
+
+@keyframes flyIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
