@@ -1,6 +1,14 @@
 import { queryOptions } from '@tanstack/react-query'
 
-const fetchPaintings = async () => {
+export interface PaintingMetadata {
+  title: string
+  size: string
+  thumbnailUrl: string
+  paintingUrl: string
+  description: string
+}
+
+const fetchPaintingMetadataList = async (): Promise<PaintingMetadata[]> => {
   const res = await fetch(
     'https://raw.githubusercontent.com/statist32/aforus/develop/public/paintings.json',
   )
@@ -10,10 +18,10 @@ const fetchPaintings = async () => {
   return res.json()
 }
 
-export const paintingsQueryOptions = () =>
+export const paintingMetadataListQueryOptions = () =>
   queryOptions({
     queryKey: ['paintings'],
-    queryFn: () => fetchPaintings(),
+    queryFn: () => fetchPaintingMetadataList(),
     refetchOnMount: true,
   })
 

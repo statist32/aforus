@@ -12,7 +12,8 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
-import { Route as DemoTanstackQueryImport } from './routes/demo.tanstack-query'
+import { Route as PaintingsIndexImport } from './routes/paintings/index'
+import { Route as PaintingsTitleImport } from './routes/paintings/$title'
 
 // Create/Update Routes
 
@@ -22,9 +23,15 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const DemoTanstackQueryRoute = DemoTanstackQueryImport.update({
-  id: '/demo/tanstack-query',
-  path: '/demo/tanstack-query',
+const PaintingsIndexRoute = PaintingsIndexImport.update({
+  id: '/paintings/',
+  path: '/paintings/',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PaintingsTitleRoute = PaintingsTitleImport.update({
+  id: '/paintings/$title',
+  path: '/paintings/$title',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,11 +46,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/demo/tanstack-query': {
-      id: '/demo/tanstack-query'
-      path: '/demo/tanstack-query'
-      fullPath: '/demo/tanstack-query'
-      preLoaderRoute: typeof DemoTanstackQueryImport
+    '/paintings/$title': {
+      id: '/paintings/$title'
+      path: '/paintings/$title'
+      fullPath: '/paintings/$title'
+      preLoaderRoute: typeof PaintingsTitleImport
+      parentRoute: typeof rootRoute
+    }
+    '/paintings/': {
+      id: '/paintings/'
+      path: '/paintings'
+      fullPath: '/paintings'
+      preLoaderRoute: typeof PaintingsIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -53,37 +67,42 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/paintings/$title': typeof PaintingsTitleRoute
+  '/paintings': typeof PaintingsIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/paintings/$title': typeof PaintingsTitleRoute
+  '/paintings': typeof PaintingsIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/demo/tanstack-query': typeof DemoTanstackQueryRoute
+  '/paintings/$title': typeof PaintingsTitleRoute
+  '/paintings/': typeof PaintingsIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/demo/tanstack-query'
+  fullPaths: '/' | '/paintings/$title' | '/paintings'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/demo/tanstack-query'
-  id: '__root__' | '/' | '/demo/tanstack-query'
+  to: '/' | '/paintings/$title' | '/paintings'
+  id: '__root__' | '/' | '/paintings/$title' | '/paintings/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
+  PaintingsTitleRoute: typeof PaintingsTitleRoute
+  PaintingsIndexRoute: typeof PaintingsIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  DemoTanstackQueryRoute: DemoTanstackQueryRoute,
+  PaintingsTitleRoute: PaintingsTitleRoute,
+  PaintingsIndexRoute: PaintingsIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +116,18 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/demo/tanstack-query"
+        "/paintings/$title",
+        "/paintings/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/demo/tanstack-query": {
-      "filePath": "demo.tanstack-query.tsx"
+    "/paintings/$title": {
+      "filePath": "paintings/$title.tsx"
+    },
+    "/paintings/": {
+      "filePath": "paintings/index.tsx"
     }
   }
 }
