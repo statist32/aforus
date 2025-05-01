@@ -4,14 +4,25 @@ export const Route = createFileRoute('/')({
   component: App,
 })
 
-export interface Painting {
-  title: string
-  size: string
-  thumbnailUrl: string
-  paintingUrl: string
-  description: string
-}
-
 function App() {
-  return <Link to={'/paintings'}>Paintings</Link>
+  return (
+    <div
+      className="socials"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        gap: '2rem',
+        fontSize: '3rem',
+      }}
+    >
+      <Link to="/paintings">Available Works</Link>
+      <Link to="https://www.twitch.tv/aforus">Twitch</Link>
+      <Link to="http://instagram.com/aforus">Instagram</Link>
+      <Link to="https://www.tiktok.com/@artbyaforus">Art TikTok</Link>
+      <Link to="https://www.tiktok.com/@af0rus">Stream TikTok</Link>
+    </div>
+  )
 }
