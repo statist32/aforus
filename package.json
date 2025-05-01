@@ -2,6 +2,7 @@
   "name": ".",
   "private": true,
   "type": "module",
+  "homepage": "https://www.aforus.de",
   "scripts": {
     "dev": "vite --port 3000",
     "start": "vite --port 3000",
@@ -12,7 +13,7 @@
     "format": "prettier",
     "check": "prettier --write . && eslint --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cp CNAME ./dist && gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.5",

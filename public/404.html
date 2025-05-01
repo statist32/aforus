@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Save the full URL so the app can restore it on load
+      sessionStorage.redirectPath =
+        location.pathname + location.search + location.hash
+      location.replace('/')
+    </script>
+  </head>
+  <body></body>
+</html>

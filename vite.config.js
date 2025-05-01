@@ -7,13 +7,16 @@ import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    TanStackRouterVite({ autoCodeSplitting: true }),
+    TanStackRouterVite({ autoCodeSplitting: false }),
     viteReact(),
   ],
-  base: '/', // replace with your GitHub repo name
+  base: '/',
   test: {
     globals: true,
     environment: 'jsdom',
+  },
+   build: {
+    cssCodeSplit: false,
   },
   resolve: {
     alias: {

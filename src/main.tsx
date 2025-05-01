@@ -9,6 +9,12 @@ import { routeTree } from './routeTree.gen'
 
 import './styles.scss'
 
+const redirectPath = sessionStorage.getItem('redirectPath')
+if (redirectPath) {
+  sessionStorage.removeItem('redirectPath')
+  window.history.replaceState(null, '', redirectPath)
+}
+
 // Create a new router instance
 const router = createRouter({
   routeTree,
