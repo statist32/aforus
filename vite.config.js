@@ -10,7 +10,7 @@ export default defineConfig({
     TanStackRouterVite({ autoCodeSplitting: true }),
     viteReact(),
   ],
-  base: '/aforus/', // replace with your GitHub repo name
+  base: '/', // replace with your GitHub repo name
   test: {
     globals: true,
     environment: 'jsdom',
