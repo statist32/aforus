@@ -44,7 +44,6 @@ function RouteComponent() {
   >(undefined)
 
   useEffect(() => {
-    console.log({ allPaintingData })
     setPaintingData(findPaintingMetadata(allPaintingData ?? [], title))
   }, [allPaintingData])
 
