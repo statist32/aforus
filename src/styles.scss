@@ -1,0 +1,41 @@
+/* global.scss */
+
+/* 1. Reset basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Set a default font and background */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3. Make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4. Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* 5. Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Set a root font size for easy rem scaling */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
