@@ -7,7 +7,7 @@
   gap: var(--gap-size);
   align-items: start; // Prevent stretching
   justify-items: center;
-  margin-top: var(--gap-size);
+  margin-top: 4rem;
   // Limit to 5 columns max
   max-width: calc(
     var(--thumbnail-width) * 5 + 4 * var(--gap-size)

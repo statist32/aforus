@@ -11,7 +11,7 @@ function Header() {
         navigate({ to: '/paintings' })
       }}
     >
-      Aforus Gallery
+      AVAILABLE WORKS
     </h1>
   )
 }
