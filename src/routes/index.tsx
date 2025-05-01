@@ -16,6 +16,9 @@ function App() {
         height: '100vh',
         gap: '2rem',
         fontSize: '3rem',
+        wordBreak: 'break-word',
+        textAlign: 'center', // center multi-line text
+        width: '100%', // allow
       }}
     >
       <Link to="/paintings">AVAILABLE WORKS</Link>
