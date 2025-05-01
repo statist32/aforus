@@ -10,7 +10,7 @@ export interface PaintingMetadata {
 
 const fetchPaintingMetadataList = async (): Promise<PaintingMetadata[]> => {
   const res = await fetch(
-    'https://raw.githubusercontent.com/statist32/aforus/develop/public/paintings.json',
+    'https://raw.githubusercontent.com/statist32/aforus/master/public/paintings.json',
   )
   if (!res.ok) {
     throw new Error('Failed to fetch paintings')
@@ -27,7 +27,7 @@ export const paintingMetadataListQueryOptions = () =>
 
 export const fetchFullPaintingBlob = async (path: string): Promise<string> => {
   const res = await fetch(
-    `https://raw.githubusercontent.com/statist32/aforus/refs/heads/develop/public${path}`,
+    `https://raw.githubusercontent.com/statist32/aforus/refs/heads/master/public${path}`,
   )
   if (!res.ok) {
     throw new Error('Failed to fetch image')
@@ -47,7 +47,7 @@ export const fetchThumbnailPaintingBlob = async (
   path: string,
 ): Promise<string> => {
   const res = await fetch(
-    `https://raw.githubusercontent.com/statist32/aforus/refs/heads/develop/public${path}`,
+    `https://raw.githubusercontent.com/statist32/aforus/refs/heads/master/public${path}`,
   )
   if (!res.ok) {
     throw new Error('Failed to fetch image')
