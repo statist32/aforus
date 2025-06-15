@@ -1,5 +1,33 @@
 [
   {
+    "title": "089 - aemulatio",
+    "size": "50 x 40cm",
+    "thumbnailUrl": "/paintings/thumbnails/089_-_aemulatio_thumb.jpg",
+    "paintingUrl": "/paintings/full/089_-_aemulatio.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
+    "title": "088 - saltatio",
+    "size": "40 x 50cm",
+    "thumbnailUrl": "/paintings/thumbnails/088_-_saltatio_thumb.jpg",
+    "paintingUrl": "/paintings/full/088_-_saltatio.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
+    "title": "087 - amnis",
+    "size": "50 x 50cm",
+    "thumbnailUrl": "/paintings/thumbnails/087_-_amnis_thumb.jpg",
+    "paintingUrl": "/paintings/full/087_-_amnis.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
+    "title": "086 - simplex",
+    "size": "50 x 50cm",
+    "thumbnailUrl": "/paintings/thumbnails/086_-_simplex_thumb.jpg",
+    "paintingUrl": "/paintings/full/086_-_simplex.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
     "title": "085 - tactus",
     "size": "40 x 30cm",
     "thumbnailUrl": "/paintings/thumbnails/085_-_tactus_thumb.jpg",
