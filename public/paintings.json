@@ -1,5 +1,19 @@
 [
   {
+    "title": "091 - effusio",
+    "size": "40 x 50cm",
+    "thumbnailUrl": "/paintings/thumbnails/091_-_effusio_thumb.jpg",
+    "paintingUrl": "/paintings/full/091_-_effusio.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
+    "title": "090 - nexus",
+    "size": "40 x 50cm",
+    "thumbnailUrl": "/paintings/thumbnails/090_-_nexus_thumb.jpg",
+    "paintingUrl": "/paintings/full/090_-_nexus.jpg",
+    "description": "lorem ipsum dolor sit amet"
+  },
+  {
     "title": "089 - aemulatio",
     "size": "50 x 40cm",
     "thumbnailUrl": "/paintings/thumbnails/089_-_aemulatio_thumb.jpg",
